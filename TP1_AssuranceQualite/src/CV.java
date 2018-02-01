@@ -22,14 +22,25 @@ public class CV {
 		String[] competenceCharles = {"Patient", "Logique"};
 		String[] competencePhilippe = {"debrouillard", "adapte facilement", "apprend facilement"};
 		CV charles = new CV("Langevin","Charles","Informatique",0,competenceCharles,"Le passer");
-		CV philippe = new CV("philippe","chevry","informatique",0,competencePhilippe,"apprendre de nouvelle chose");
+		CV philippe = new CV("chevry","philippe","informatique",0,competencePhilippe,"apprendre de nouvelle chose");
+		
+		System.out.println("Bienvenue chez Barrette!");
 		
 		charles.afficher();
 		philippe.afficher();
 	}
 	
 	public void afficher() {
+		System.out.println("Nom: " + this.nom + "\n");
+		System.out.println("Prénom: " + this.prenom + "\n");
+		System.out.println("Formation: " + this.competence + "\n");
+		System.out.println("Expériences de travail: " + this.exp + "\n");
+		System.out.println("Compétences:"  );
+		for(int i = 0; i < competence.length; i++){
+			System.out.println(this.competence[i]);
+		}
 		
+		System.out.println("\nAttentes vis à vis le cours 4B4: " + this.attente + "\n");
 	}
 
 }
