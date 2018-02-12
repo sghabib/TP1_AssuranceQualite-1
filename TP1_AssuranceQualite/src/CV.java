@@ -4,9 +4,10 @@ public class CV {
 	private String nom;
 	private String prenom;
 	private String formation;
-	private int exp;
-	private String[] competence;
 	private String attente;
+	private String[] competence;
+	
+	private int exp;
 	
 	public CV (String nom, String prenom, String formation, int exp, String[] competence, String attente) {
 		this.nom = nom;
@@ -33,8 +34,9 @@ public class CV {
 	public void afficher() {
 		System.out.println("Nom: " + this.nom + "\n");
 		System.out.println("Prénom: " + this.prenom + "\n");
-		System.out.println("Formation: " + this.competence + "\n");
+		System.out.println("Formation: " + this.formation + "\n");
 		System.out.println("Expériences de travail: " + this.exp + "\n");
+		
 		System.out.println("Compétences:"  );
 		for(int i = 0; i < competence.length; i++){
 			System.out.println(this.competence[i]);
