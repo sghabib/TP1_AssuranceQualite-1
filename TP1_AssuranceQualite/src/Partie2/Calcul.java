@@ -15,7 +15,7 @@ public class Calcul {
 	private String[][] plats ;
 	private String[][] commandes ;
 	
-	File file = new File("Test.txt");
+	File file = new File("Style.txt");
 	
 	public double[] prix;
 	
