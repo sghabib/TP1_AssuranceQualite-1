@@ -21,8 +21,7 @@ public class Facture{
 		
 		for(int i = 0; i < clients.length; i++) {
 			System.out.println(clients[i] + " " + df.format(prix[i]));
-		}
-		
+		}		
 	}
 
 }
