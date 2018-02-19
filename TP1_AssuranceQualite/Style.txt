@@ -1,0 +1,8 @@
+1. Le constructeur est toujours en premier suivie du main si nécéssaire.
+2. Les variables sont classées selon leur type et chaque type est séparé par des espaces.
+3. Les {} sont toujours positionnées selon le partern suivant : 
+public void ...(){
+	...
+	...
+}
+4. Les variables sont toujours écrits au début des méthodes.
