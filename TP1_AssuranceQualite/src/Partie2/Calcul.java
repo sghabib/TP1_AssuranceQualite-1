@@ -15,7 +15,7 @@ public class Calcul {
 	private String[][] plats ;
 	private String[][] commandes ;
 	
-	File file = new File("Style.txt");
+	File file = new File("Facture.txt");
 	
 	public double[] prix;
 	
@@ -63,6 +63,7 @@ public class Calcul {
 					break;
 				
 				case 3:
+					try {
 					commandes = new String[sub.size()][3];
 					String[] tempCommande;
 					
@@ -70,10 +71,20 @@ public class Calcul {
 						tempCommande = sub.get(j).split(" ");
 						
 						for(int k = 0; k < commandes[0].length; k++) {
-							commandes[j][k] = tempCommande[k];
+							
+							for(int l = 0; l < clients.length; l++) {
+								if(tempCommande[0] != clients[l] ||  tempCommande[1] != plats[l][0]) {
+									throw new Exception();
+								}
+								commandes[j][k] = tempCommande[k];
+							}
 						}					
 					}
 					break;
+					}catch (Exception e) {
+						System.out.println("Le fichier ne respecte pas le format demandé !");
+						break;
+					}
 				}				
 				i++;
 				sub.clear();
