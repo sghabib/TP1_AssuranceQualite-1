@@ -1,0 +1,5 @@
+Les commits devraient se faire sur la branche branche-cv pas sur la master.
+// Dans la methode affiche vous avez mis le tableau "competence" à la place de l'argument formation
+
+Très bon travail
+Merci
